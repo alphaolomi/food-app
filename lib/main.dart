@@ -89,16 +89,6 @@ class _MainPageState extends State<MainPage> {
         ],
       ),
       body:
-//      Center(
-//        child: Column(
-//          mainAxisAlignment: MainAxisAlignment.center,
-//          children: <Widget>[
-//            Text('Orders:'),
-//            Text('$_counter', style: Theme.of(context).textTheme.display1),
-//          ],
-//        ),
-//      ),
-
           new Container(
               padding: new EdgeInsets.all(20.0),
               child: new Form(
