@@ -1,3 +1,5 @@
+import 'package:flutter_app/university.dart';
+
 import 'about.dart';
 import 'history.dart';
 import 'package:flutter/material.dart';
@@ -47,6 +49,8 @@ class _MainPageState extends State<MainPage> {
   String desc = "";
   int _counter = 0;
 
+
+
   void onMenuSelected(MainMenuOptions value) {
     switch (value) {
       case MainMenuOptions.about:
@@ -88,72 +92,75 @@ class _MainPageState extends State<MainPage> {
               })
         ],
       ),
-      body:
-          new Container(
-              padding: new EdgeInsets.all(20.0),
-              child: new Form(
-                key: formKey,
-                autovalidate: true,
-                child: new ListView(
-                  children: <Widget>[
-                    Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
-                        child: new TextFormField(
-                          //controller: heightController,
-                          keyboardType: TextInputType.text,
-                          onSaved: (val) => this.name = val,
-                          decoration: new InputDecoration(labelText: 'Name'),
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
-                        child: new TextFormField(
-                          keyboardType: TextInputType.text,
-                          onSaved: (val) => this.name = val,
-                          decoration: new InputDecoration(labelText: 'Desc'),
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
-                        child: new TextFormField(
-                          keyboardType: TextInputType.number,
-                          onSaved: (val) => this.name = val,
-                          decoration: new InputDecoration(labelText: 'Count'),
-                        )),
-                    new Container(
-                      width: screenSize.width,
-                      child: new RaisedButton(
-                          child: new Text('Order',
-                              style: new TextStyle(color: Colors.white)),
-                          color: Colors.deepOrange,
-                          onPressed: () {
-                            return showDialog(
-                              context: context,
-                              builder: (BuildContext context) {
-                                return AlertDialog(
-                                  title: new Text("Order Summary"),
-                                  content: Text('dss'),
-                                  actions: <Widget>[
-                                    new FlatButton(
-                                      child: new Text("Close"),
-                                      onPressed: () {
-                                        Navigator.of(context).pop();
-                                      },
-                                    ),
-                                    new FlatButton(
-                                      child: new Text("Confirm"),
-                                      onPressed: () {
-                                        return null;
-                                      },
-                                    ),
-                                  ],
-                                );
-                              },
+      body: new Container(
+          padding: new EdgeInsets.all(20.0),
+          child: new Form(
+            key: formKey,
+            autovalidate: true,
+            child: new ListView(
+              children: <Widget>[
+                Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                    child: new TextFormField(
+                      //controller: heightController,
+                      keyboardType: TextInputType.text,
+                      onSaved: (val) => this.name = val,
+                      decoration: new InputDecoration(labelText: 'Name'),
+                    )),
+                Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                    child: new TextFormField(
+                      keyboardType: TextInputType.text,
+                      onSaved: (val) => this.name = val,
+                      decoration: new InputDecoration(labelText: 'Desc'),
+                    )),
+                Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                    child: new TextFormField(
+                      keyboardType: TextInputType.number,
+                      onSaved: (val) => this.name = val,
+                      decoration: new InputDecoration(labelText: 'Count'),
+                    )),
+                new Container(
+                  width: screenSize.width,
+                  child: new RaisedButton(
+                      child: new Text('Order',
+                          style: new TextStyle(color: Colors.white)),
+                      color: Colors.deepOrange,
+                      onPressed: () {
+                        return showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: new Text("Order Summary"),
+                              content: Text('dss'),
+                              actions: <Widget>[
+                                new FlatButton(
+                                  child: new Text("Close"),
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                ),
+                                new FlatButton(
+                                  child: new Text("Confirm"),
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                HostelScreen()));
+                                  },
+                                ),
+                              ],
                             );
-                          }),
-                      margin: new EdgeInsets.only(top: 20.0),
-                    )
-                  ],
-                ),
-              )),
+                          },
+                        );
+                      }),
+                  margin: new EdgeInsets.only(top: 20.0),
+                )
+              ],
+            ),
+          )),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Add Order',

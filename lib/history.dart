@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 //import 'package:advanced_share/advanced_share.dart';
 
 class HistoryScreen extends StatelessWidget {
+  static const String _title = 'Food App';
   final scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Food App',
+      title: _title,
       theme: new ThemeData(primarySwatch: Colors.deepOrange),
       home: HistoryPage(title: 'History'),
     );
