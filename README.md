@@ -8,20 +8,8 @@
 
 ## Progress
 
-Todo in React is in development right now, Wanna check out the components? sure!! .
+Food App is in development right now, Wanna check out the components? sure!! .
 
-## Getting Started
-
-```bash
-# Install dependencies
-npm install
-
-# Serve on localhost:3000
-npm start
-
-# Build for production
-npm run build
-```
 
 ## Status
 
