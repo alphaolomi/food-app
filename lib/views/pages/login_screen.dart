@@ -24,8 +24,8 @@ class _LoginScreenState extends State<LoginScreen> {
   final _passwordKey = GlobalKey<FormFieldState>();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
 
-  final String _userEmail = "godsonnchy@gmail.com";
-  final String _userPassword = "12345";
+  final String _userEmail = "a@g.c";
+  final String _userPassword = "1";
 
   bool _isObscure = true;
 
