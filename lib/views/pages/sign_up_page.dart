@@ -45,22 +45,22 @@ class _SignUpPageState extends State<SignUpPage> {
                 height: 100.0,
               ),
               Center(
-                  child: Text("TeamUp",
+                  child: Text("Food App",
                       style: TextStyle(
                           fontWeight: FontWeight.w500, fontSize: 35))),
               SizedBox(
-                height: 10.0,
+                height: 8.0,
               ),
               Center(
                   child: Text("Please fill in all details",
                       style: TextStyle(
                           fontWeight: FontWeight.w300, fontSize: 12))),
               SizedBox(
-                height: 30.0,
+                height: 28.0,
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                    top: 40, right: 40, bottom: 10, left: 40),
+                    top: 28, right: 28, bottom: 8, left: 38),
                 child: TextFormField(
                   focusNode: _emailFocusNode,
                   controller: _emailTextEditingController,
@@ -73,15 +73,16 @@ class _SignUpPageState extends State<SignUpPage> {
                   },
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
-                      hintText: "Example@gmail.com",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30.0),
-                      )),
+                    hintText: "Example@gmail.com",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(28.0),
+                    ),
+                  ),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                    top: 10, right: 40, bottom: 10, left: 40),
+                    top: 8, right: 38, bottom: 8, left: 38),
                 child: TextFormField(
                     key: _passwordkey,
                     focusNode: _passwordFocusNode,
@@ -98,43 +99,45 @@ class _SignUpPageState extends State<SignUpPage> {
                     decoration: InputDecoration(
                         hintText: "Password",
                         border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30.0),
+                          borderRadius: BorderRadius.circular(28.0),
                         ))),
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                    top: 10, right: 40, bottom: 10, left: 40),
+                    top: 8, right: 38, bottom: 8, left: 38),
                 child: TextFormField(
-                    key: _confirmpasswordkey,
-                    focusNode: _confirmPasswordFocusNode,
-                    controller: _confirmPasswordTextEditingController,
-                    validator: (value) {
-                      if (value.isEmpty) {
-                        return 'Password Required';
-                      } else if (_confirmpasswordkey.currentState.value !=
-                          _passwordkey.currentState.value) {
-                        return 'Password do not match';
-                      } else {
-                        return null;
-                      }
-                    },
-                    keyboardType: TextInputType.text,
-                    obscureText: true,
-                    decoration: InputDecoration(
-                        hintText: "Confirm Password",
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30.0),
-                        ))),
+                  key: _confirmpasswordkey,
+                  focusNode: _confirmPasswordFocusNode,
+                  controller: _confirmPasswordTextEditingController,
+                  validator: (value) {
+                    if (value.isEmpty) {
+                      return 'Password Required';
+                    } else if (_confirmpasswordkey.currentState.value !=
+                        _passwordkey.currentState.value) {
+                      return 'Password do not match';
+                    } else {
+                      return null;
+                    }
+                  },
+                  keyboardType: TextInputType.text,
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    hintText: "Confirm Password",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(28.0),
+                    ),
+                  ),
+                ),
               ),
               Row(
                 children: <Widget>[
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.only(
-                          top: 30, right: 40, bottom: 10, left: 40),
+                          top: 30, right: 40, bottom: 8, left: 40),
                       child: RaisedButton(
                         padding: const EdgeInsets.all(17),
-                        color: Colors.deepPurple,
+                        color: Colors.deepOrange,
                         onPressed: () {
                           if (_signupkey.currentState.validate()) {
                             print('good to go');
@@ -142,13 +145,16 @@ class _SignUpPageState extends State<SignUpPage> {
                             print('error');
                           }
                         },
-                        child: Text("SIGN UP",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w300,
-                                fontSize: 25,
-                                color: Colors.white)),
+                        child: Text(
+                          "SIGN UP",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w300,
+                            fontSize: 24,
+                            color: Colors.white,
+                          ),
+                        ),
                         shape: new RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30.0),
+                          borderRadius: BorderRadius.circular(28.0),
                         ),
                       ),
                     ),

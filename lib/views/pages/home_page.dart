@@ -36,34 +36,24 @@ class _HomePageState extends State<HomePage> {
           currentIndex: _selectedIndex,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.today),
-              title: Text(
-                'Today',
-              ),
+              icon: Icon(Icons.fastfood),
+              title: Text('Food'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.category),
-              title: Text(
-                'Categories',
-              ),
+              icon: Icon(Icons.restaurant),
+              title: Text('Providers'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.star),
-              title: Text(
-                'Discover',
-              ),
+              icon: Icon(Icons.favorite),
+              title: Text('Favorites'),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.search),
-              title: Text(
-                'Search',
-              ),
+              title: Text('Search'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.pages),
-              title: Text(
-                'Pages',
-              ),
+              icon: Icon(Icons.person),
+              title: Text('Profile'),
             )
           ],
         ));

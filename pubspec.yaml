@@ -31,6 +31,11 @@ flutter:
     - assets/images/d.jpg
     - assets/images/e.jpeg
     - assets/images/f.jpeg
+    - assets/images/foods/a.jpeg
+    - assets/images/foods/b.jpeg
+    - assets/images/foods/c.jpg
+    - assets/images/foods/d.jpeg
+    - assets/images/foods/p.jpeg
 
     - assets/images/categories/camera.png
     - assets/images/categories/church.png
@@ -40,6 +45,7 @@ flutter:
     - assets/images/categories/puzzle.png
     - assets/images/categories/radio.png
     - assets/images/categories/travel.png
+
   # fonts:
   #   - family: Schyler
   #     fonts:

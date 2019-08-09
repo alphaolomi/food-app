@@ -12,10 +12,11 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Food App',
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.deepOrange,
+        accentColor: Colors.deepOrangeAccent
       ),
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: HomePage(),
       routes: {
         loginPage: (BuildContext context) => LoginPage(),
         signIn: (BuildContext context) => LoginScreen(),
