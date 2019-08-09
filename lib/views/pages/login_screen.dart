@@ -25,7 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final _scaffoldKey = GlobalKey<ScaffoldState>();
 
   final String _userEmail = "godsonnchy@gmail.com";
-  final String _userpassword = "12345";
+  final String _userPassword = "12345";
 
   bool _isObscure = true;
 
@@ -92,10 +92,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   validator: (value) {
                     if (value.isEmpty) {
                       return 'Email Required';
-                    } // else if (value != _userEmail) {
-                    //return 'wrong email';
-                    //}
-                    else {
+                    } else {
                       return null;
                     }
                   },
@@ -117,10 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   validator: (value) {
                     if (value.isEmpty) {
                       return 'Password Required';
-                    } //else if (value != _userpassword) {
-                    //return 'Wrong password';
-                    //}
-                    else {
+                    }else {
                       return null;
                     }
                   },
@@ -171,7 +165,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           if (_loginScreenKey.currentState.validate()) {
                             if (_userEmail ==
                                     _emailTextEditingController.text &&
-                                _userpassword ==
+                                _userPassword ==
                                     _passwordTextEditingController.text) {
                               Navigator.pushReplacementNamed(context, homePage);
                             } else {

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class SignUpPage extends StatefulWidget {
-  
   @override
   _SignUpPageState createState() => _SignUpPageState();
 }
@@ -46,18 +45,16 @@ class _SignUpPageState extends State<SignUpPage> {
                 height: 100.0,
               ),
               Center(
-                child: Text("TeamUp",
-                    style:
-                        TextStyle(fontWeight: FontWeight.w500, fontSize: 35)),
-              ),
+                  child: Text("TeamUp",
+                      style: TextStyle(
+                          fontWeight: FontWeight.w500, fontSize: 35))),
               SizedBox(
                 height: 10.0,
               ),
               Center(
-                child: Text("Please fill in all details",
-                    style:
-                        TextStyle(fontWeight: FontWeight.w300, fontSize: 12)),
-              ),
+                  child: Text("Please fill in all details",
+                      style: TextStyle(
+                          fontWeight: FontWeight.w300, fontSize: 12))),
               SizedBox(
                 height: 30.0,
               ),
@@ -67,9 +64,8 @@ class _SignUpPageState extends State<SignUpPage> {
                 child: TextFormField(
                   focusNode: _emailFocusNode,
                   controller: _emailTextEditingController,
-
                   validator: (value) {
-                    if(value.isEmpty) {
+                    if (value.isEmpty) {
                       return 'Email required';
                     } else {
                       return null;
@@ -90,16 +86,13 @@ class _SignUpPageState extends State<SignUpPage> {
                     key: _passwordkey,
                     focusNode: _passwordFocusNode,
                     controller: _passwordTextEditingController,
-                   
                     validator: (value) {
-                      if(value.isEmpty) {
+                      if (value.isEmpty) {
                         return 'Password required';
                       } else {
                         return null;
                       }
                     },
-                   
-
                     keyboardType: TextInputType.text,
                     obscureText: true,
                     decoration: InputDecoration(
@@ -116,9 +109,10 @@ class _SignUpPageState extends State<SignUpPage> {
                     focusNode: _confirmPasswordFocusNode,
                     controller: _confirmPasswordTextEditingController,
                     validator: (value) {
-                      if(value.isEmpty) {
+                      if (value.isEmpty) {
                         return 'Password Required';
-                      }else if(_confirmpasswordkey.currentState.value != _passwordkey.currentState.value) {
+                      } else if (_confirmpasswordkey.currentState.value !=
+                          _passwordkey.currentState.value) {
                         return 'Password do not match';
                       } else {
                         return null;
@@ -126,7 +120,6 @@ class _SignUpPageState extends State<SignUpPage> {
                     },
                     keyboardType: TextInputType.text,
                     obscureText: true,
-                    
                     decoration: InputDecoration(
                         hintText: "Confirm Password",
                         border: OutlineInputBorder(
@@ -143,7 +136,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         padding: const EdgeInsets.all(17),
                         color: Colors.deepPurple,
                         onPressed: () {
-                          if(_signupkey.currentState.validate()) {
+                          if (_signupkey.currentState.validate()) {
                             print('good to go');
                           } else {
                             print('error');
