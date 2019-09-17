@@ -31,8 +31,8 @@ In development v.0.0.1
 
 
 ## 🤓 Author(s)
-**Alpha Olomi** [hello@alphaolomi.com](mailto:hello@alphaolomi.com)
-- ☺ Gordon Nchy [@gordonnchy](https://github.com/gordonnchy)
+- **Alpha Olomi** [hello@alphaolomi.com](mailto:hello@alphaolomi.com)
+- **Gordon Nchy** [@gordonnchy](https://github.com/gordonnchy)
 
 
 ## ☕️  Donate
