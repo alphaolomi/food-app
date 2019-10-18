@@ -1,5 +1,5 @@
 <h1 align="center">Food App  🍔🍚🍝</h1>
-<p align="center">A simple 🍉food delivery,application based on Flutter. Made with ❤️ in Tanzania. For university students at UDSM</p>
+<p align="center">A simple 🍉food delivery,application based on Flutter. Made with ❤️ in Tanzania. For university students</p>
 
 
 <p align="center">
@@ -33,14 +33,6 @@ In development v.0.0.1
 ## 🤓 Author(s)
 - **Alpha Olomi** [hello@alphaolomi.com](mailto:hello@alphaolomi.com)
 - **Gordon Nchy** [@gordonnchy](https://github.com/gordonnchy)
-
-
-## ☕️  Donate
-
-Buy me a cup of Coffee😁
-
-
-> Wallet cooming soon 🚧
 
 
 ## 🔖 LICENCE
