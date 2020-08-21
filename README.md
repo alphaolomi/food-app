@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="/"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" alt="Maintained:yes"></a>
-<a href="https://codemagic.io/apps/5dc1abd80679e133d809c831/5dc1abd80679e133d809c830/latest_build"><img src="https://api.codemagic.io/apps/5dc1abd80679e133d809c831/5dc1abd80679e133d809c830/status_badge.svg" alt="Codemagic build status"></a>
+<a href="https://codemagic.io/apps/5d524c73cb00320009f738d2/5d524c73cb00320009f738d1/latest_build"><img src="https://api.codemagic.io/apps/5d524c73cb00320009f738d2/5d524c73cb00320009f738d1/status_badge.svg" alt="Codemagic build status"></a>
 
 </p>
 
