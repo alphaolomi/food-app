@@ -1,4 +1,4 @@
-<h1 align="center">food-app</h1>
+<h1 align="center">food-app <br>[WORK IN PROGRESS]</h1>
 <p align="center">A simple food delivery, android mobile application based on Flutter.</p>
 
 
@@ -8,9 +8,15 @@
 
 </p>
 
+
 ## Overview
 
 Food App is in development right now, Wanna check out the components? sure!! .
+## Features
+
+## Roadmap
+
+1. Improve UI
 
 
 ## Requirements
