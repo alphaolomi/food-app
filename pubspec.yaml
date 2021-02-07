@@ -19,7 +19,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  carousel_slider: ^2.0.0
+  carousel_slider: ^3.0.0
 
 flutter:
   uses-material-design: true
