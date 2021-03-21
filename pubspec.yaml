@@ -12,7 +12,7 @@ dependencies:
   splashscreen:
   sqflite: ^2.0.0
   cupertino_icons: ^1.0.0
-  font_awesome_flutter: ^8.5.0
+  font_awesome_flutter: ^9.0.0
   url_launcher: ^6.0.0
 
 
