@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:FoodApp/views/screens/category_screen.dart';
-import 'package:FoodApp/views/screens/discover_screen.dart';
-import 'package:FoodApp/views/screens/pages_screen.dart';
-import 'package:FoodApp/views/screens/search_screen.dart';
-import 'package:FoodApp/views/screens/today_screen.dart';
+import 'package:foodapp/views/screens/category_screen.dart';
+import 'package:foodapp/views/screens/discover_screen.dart';
+import 'package:foodapp/views/screens/pages_screen.dart';
+import 'package:foodapp/views/screens/search_screen.dart';
+import 'package:foodapp/views/screens/today_screen.dart';
 
 class HomePage extends StatefulWidget {
   @override

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:FoodApp/views/pages/home_page.dart';
-import 'package:FoodApp/views/pages/login_page.dart';
-import 'package:FoodApp/views/pages/login_screen.dart';
-import 'package:FoodApp/views/pages/sign_up_page.dart';
+import 'package:foodapp/views/pages/home_page.dart';
+import 'package:foodapp/views/pages/login_page.dart';
+import 'package:foodapp/views/pages/login_screen.dart';
+import 'package:foodapp/views/pages/sign_up_page.dart';
 
 import 'constant/constant.dart';
 

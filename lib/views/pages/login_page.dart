@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:FoodApp/constant/constant.dart';
+import 'package:foodapp/constant/constant.dart';
 
 class LoginPage extends StatelessWidget {
   @override

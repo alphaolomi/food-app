@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:FoodApp/model/album.dart';
+import 'package:foodapp/model/album.dart';
+
 
 class AlbumCard extends StatelessWidget {
   final Album album;

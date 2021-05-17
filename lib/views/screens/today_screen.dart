@@ -1,6 +1,6 @@
-import 'package:FoodApp/model/album.dart';
-import 'package:FoodApp/views/componets/cards/album_card.dart';
-import 'package:FoodApp/views/componets/header/simple_header.dart';
+import 'package:foodapp/model/album.dart';
+import 'package:foodapp/views/componets/cards/album_card.dart';
+import 'package:foodapp/views/componets/header/simple_header.dart';
 import 'package:flutter/material.dart';
 
 class TodayScreen extends StatelessWidget {

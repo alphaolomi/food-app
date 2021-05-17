@@ -1,4 +1,4 @@
-<h1 align="center">food-app <br>[WORK IN PROGRESS]</h1>
+<h1 align="center">Food-app</h1>
 <p align="center">A simple food delivery, android mobile application based on Flutter.</p>
 
 
@@ -8,23 +8,16 @@
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Falphaolomi%2Ffood-app&count_bg=%2379C83D&title_bg=%23555555&icon=codeigniter.svg&icon_color=%23E7E7E7&title=hits&edge_flat=true"/></a>
 </p>
 
-
 ## Overview
 
-Food App is in development right now, Wanna check out the components? sure!! .
-## Features
-
-## Roadmap
-
-1. Improve UI
+Food App is in development right now, Wanna check out the components? sure!!.
 
 
 ## Requirements
+
 * Any Operating System (ie. MacOS X, Linux, Windows)
 * Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
-* A little knowledge of Dart and Flutter
-* A brain to think 🤓🤓
-
+* A little knowledge of [Dart](/) and [Flutter](https://flutter.dev/)
 
 ## Contributing
 
@@ -36,9 +29,9 @@ If you discover any security related issues, please email [hello@alphaolomi.com]
 
 ## Credits
 
--   [@alphaolomi](https://github.com/alphaolomi/) **Alpha Olomi**
--   [@gordonnchy](https://github.com/gordonnchy/) **Gordon Nchy**
--   [All Contributors][link-contributors]
+* [@alphaolomi](https://github.com/alphaolomi/) **Alpha Olomi**
+* [@gordonnchy](https://github.com/gordonnchy/) **Gordon Nchy**
+* [All Contributors][link-contributors]
 
 ## License
 

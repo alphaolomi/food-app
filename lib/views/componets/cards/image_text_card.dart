@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:FoodApp/model/album.dart';
+import 'package:foodapp/model/album.dart';
 
 class ImageText extends StatelessWidget {
   final Album album;
