@@ -17,7 +17,7 @@ Food App is in development right now, Wanna check out the components? sure!!.
 
 * Any Operating System (ie. MacOS X, Linux, Windows)
 * Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
-* A little knowledge of [Dart](/) and [Flutter](https://flutter.dev/)
+* A little knowledge of [Dart](https://dart.dev/) and [Flutter](https://flutter.dev/)
 
 ## Contributing
 
