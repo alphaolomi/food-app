@@ -1,40 +1,53 @@
-<h1 align="center">Food-app</h1>
-<p align="center">A simple food delivery, android mobile application based on Flutter.</p>
+# foodapp
 
+Customer **Flutter** app (**Android** + **iOS** only) — `dev.alphaolomi.foodapp`.
 
-<p align="center">
-  <a href="/"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" alt="Maintained:yes"></a>
-<a href="https://codemagic.io/apps/5d524c73cb00320009f738d2/5d524c73cb00320009f738d1/latest_build"><img src="https://api.codemagic.io/apps/5d524c73cb00320009f738d2/5d524c73cb00320009f738d1/status_badge.svg" alt="Codemagic build status"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Falphaolomi%2Ffood-app&count_bg=%2379C83D&title_bg=%23555555&icon=codeigniter.svg&icon_color=%23E7E7E7&title=hits&edge_flat=true"/></a>
-</p>
+Connects to **`food-server`** Sanctum API under `/api/v1`: auth, store directory, catalog, cart, checkout with **`Idempotency-Key`** ([`uuid`](https://pub.dev/packages/uuid)), and order details.
 
-## Overview
+## Stack
 
-Food App is in development right now, Wanna check out the components? sure!!.
+| Package | Role |
+|--------|------|
+| [`provider`](https://pub.dev/packages/provider) | `AuthProvider`, `CartProvider`, `StoresProvider` |
+| [`dio`](https://pub.dev/packages/dio) | HTTP + JSON |
+| [`flutter_secure_storage`](https://pub.dev/packages/flutter_secure_storage) | Bearer token |
+| [`flutter_svg`](https://pub.dev/packages/flutter_svg) | In-app icons in `assets/icons/` |
+| [`intl`](https://pub.dev/packages/intl) | Money + order timestamps |
+| [`uuid`](https://pub.dev/packages/uuid) | Checkout idempotency keys |
 
+Not used (by request): Riverpod, go_router, GetX, Bloc.
 
-## Requirements
+## Configure API URL
 
-* Any Operating System (ie. MacOS X, Linux, Windows)
-* Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
-* A little knowledge of [Dart](https://dart.dev/) and [Flutter](https://flutter.dev/)
+```bash
+# Android emulator → machine localhost
+flutter run --dart-define=API_BASE_URL=http://10.0.2.2:8000/api
 
-## Contributing
+# iOS simulator
+flutter run --dart-define=API_BASE_URL=http://127.0.0.1:8000/api
+```
 
-Pull requests are welcome. Please see [CONTRIBUTING](./.github/CONTRIBUTING.md) and [CODE_OF_CONDUCT](./.github/CODE_OF_CONDUCT.md) for details.
+Debug builds allow **cleartext HTTP** on Android (`debug/AndroidManifest`) and **local networking** on iOS (`Info.plist`).
 
-## Security
+## CLI: launcher icon
 
-If you discover any security related issues, please email [hello@alphaolomi.com](mailto:hello@alphaolomi.com) instead of using the issue tracker.
+```bash
+dart run tool/generate_app_icon.dart   # writes assets/branding/app_icon.png
+dart run flutter_launcher_icons        # applies to Android + iOS
+```
 
-## Credits
+## Run / test
 
-* [@alphaolomi](https://github.com/alphaolomi/) **Alpha Olomi**
-* [@gordonnchy](https://github.com/gordonnchy/) **Gordon Nchy**
-* [All Contributors][link-contributors]
+```bash
+flutter pub get
+flutter analyze
+flutter test
+flutter run
+```
 
-## License
+## Flow
 
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) Please see [License File](LICENSE) for more information.
-
-[link-contributors]: ../../contributors
+1. **Login** / **Register** → token stored securely.  
+2. **Stores** → open **Catalog** (cart is scoped per store).  
+3. **Cart** → pickup/delivery → **Place order** (stub payment provider).  
+4. **Order** summary with lines, payments, tickets.

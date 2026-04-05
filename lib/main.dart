@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'App.dart';
+import 'app/food_app_root.dart';
 
-void main() => runApp(App());
-
-
-
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const FoodAppRoot());
+}
